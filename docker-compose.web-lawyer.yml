@@ -1,0 +1,13 @@
+
+services:
+  web-lawyer:
+    build: ./web-lawyer
+    container_name: logicinfo_web-lawyer
+    ports:
+      - "3002:3000"
+    networks:
+      - logicinfo-network
+
+networks:
+  logicinfo-network:
+    external: true

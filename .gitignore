@@ -1,3 +1,15 @@
+# Specific to your project structure
+/adm/node_modules/
+/api/node_modules/
+/web/node_modules/
+/web-lawyer/node_modules/
+/volumes/mysql/
+
+# Node.js
+/node_modules
+/.pnp
+.pnp.js
+
 # Logs
 logs
 *.log
@@ -5,7 +17,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-.pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -32,20 +43,13 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 
-# node-waf configuration
-.lock-wscript
-
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
+jspm_packages
 
-# Snowpack dependency directory (https://snowpack.dev/)
-web_modules/
-
-# TypeScript cache
+# TypeScript
 *.tsbuildinfo
 
 # Optional npm cache directory
@@ -53,9 +57,6 @@ web_modules/
 
 # Optional eslint cache
 .eslintcache
-
-# Optional stylelint cache
-.stylelintcache
 
 # Microbundle cache
 .rpt2_cache/
@@ -72,59 +73,35 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variable files
+# dotenv environment variables file
 .env
+.env.test
+.env.production
+.env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
+# next.js
+/.next/
+/out/
 
-# Next.js build output
-.next
-out
+# production
+/build
 
-# Nuxt.js build / generate output
-.nuxt
-dist
+# misc
+.DS_Store
+*.pem
 
-# Gatsby files
-.cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
+# vercel
+.vercel
 
-# vuepress build output
-.vuepress/dist
+# IDEs and editors
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# vuepress v2.x temp and cache directory
-.temp
-.cache
-
-# Docusaurus cache and generated files
-.docusaurus
-
-# Serverless directories
-.serverless/
-
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-.dynamodb/
-
-# TernJS port file
-.tern-port
-
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
-
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*

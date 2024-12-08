@@ -1,0 +1,12 @@
+services:
+  api:
+    build: ./api
+    container_name: logicinfo_api
+    ports:
+      - "3000:3000"
+    networks:
+      - logicinfo-network
+
+networks:
+  logicinfo-network:
+    external: true

@@ -1,0 +1,12 @@
+services:
+  web:
+    build: ./web
+    container_name: logicinfo_web
+    ports:
+      - "3001:3000"
+    networks:
+      - logicinfo-network
+
+networks:
+  logicinfo-network:
+    external: true

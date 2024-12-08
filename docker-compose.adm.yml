@@ -1,0 +1,12 @@
+services:
+  adm:
+    build: ./adm
+    container_name: logicinfo_adm
+    ports:
+      - "3003:3000"
+    networks:
+      - logicinfo-network
+
+networks:
+  logicinfo-network:
+    external: true
